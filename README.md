@@ -5,7 +5,7 @@ Matplotlib style and funcionality for the Cyber-Physical Simulation group.
 
 Using [uv](https://docs.astral.sh/uv/) (recomended):
 ```shell
-pip install "cyberplotstyle @ git+https://github.com/Drenderer/cyberplotstyle.git@main"
+uv add "cyberplotstyle @ git+https://github.com/Drenderer/cyberplotstyle.git@main"
 ```
 
 Using pip:
