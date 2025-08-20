@@ -13,7 +13,8 @@ Using pip:
 pip install "dynax @ git+https://github.com/Drenderer/cyberplotstyle.git@main"
 ```
 
-!!! warning Make sure to include a commit hash to avoid breaking changes as Cyber Plot Style is still in early development. For this replace "main" in the git address with the commit hash of the version that you want to install.
+> [!WARNING]
+> Make sure to include a commit hash to avoid breaking changes as Cyber Plot Style is still in early development. For this replace "main" in the git address with the commit hash of the version that you want to install.
 
 ## Usage
 
@@ -62,7 +63,8 @@ figure.facecolor:   FFFFFF00    # figure face color (transparent)
 ```python
 text.usetex: True    # use latex for all text handling.
 ```
-!!! note Requires a working LaTeX installation
+> [!NOTE]
+> Requires a working LaTeX installation
 
 ### Color manipulation
 ```def scale_hls(color: ColorType, hue: float = 1.0, lightness: float = 1.0, saturation: float = 1.0) -> tuple[float, float, float, float]```
