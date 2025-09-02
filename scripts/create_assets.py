@@ -5,7 +5,7 @@ from pathlib import Path
 from matplotlib import pyplot as plt
 
 import cyberplotstyle
-from cyberplotstyle.colors import plot_colortable
+from cyberplotstyle.tools import plot_colormap, plot_colortable
 
 # plt.style.use("cyberplotstyle.presentation")
 
@@ -16,3 +16,6 @@ fig.savefig(ASSET_PATH / "tud_colors.png")
 
 fig = plot_colortable(cyberplotstyle.cps_colors, sort_colors=False)
 fig.savefig(ASSET_PATH / "cps_colors.png")
+
+fig = plot_colormap(cyberplotstyle.colormaps["cps:seismic"])
+fig.savefig(ASSET_PATH / "cps_seismic.png", bbox_inches="tight")

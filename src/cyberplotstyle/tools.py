@@ -82,6 +82,20 @@ def plot_colortable(colors, *, ncols=4, sort_colors=True):
 
     return fig
 
+def plot_colormap(cmap):
+    fig, ax = plt.subplots(figsize=(6, 1))
+    fig.subplots_adjust(bottom=0.5)
+
+    norm = mcolors.Normalize(vmin=0, vmax=1)
+
+    fig.colorbar(
+        plt.cm.ScalarMappable(norm=norm, cmap=cmap),
+        cax=ax, orientation="horizontal"
+    )
+    fig.suptitle(cmap.name, y=1.1)
+
+    return fig
+
 def scale_hls(
     color: ColorType, hue: float = 1.0, lightness: float = 1.0, saturation: float = 1.0
 ) -> tuple[float, float, float, float]:

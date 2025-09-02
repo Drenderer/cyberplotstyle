@@ -42,6 +42,10 @@ cyberplotstyle.cps_colors
 cyberplotstyle.tud_colors
 ```
 
+### Colormaps
+The following colormaps are available as named colormaps, e.g., with `plt.colormaps(< name >)`:
+![CPS Colormap](assets/cps_seismic.png)
+
 ### Setting aditional styles
 You can set additional styles via
 ```python
