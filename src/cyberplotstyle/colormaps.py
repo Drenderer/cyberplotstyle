@@ -9,7 +9,7 @@ from matplotlib.colors import LinearSegmentedColormap
 # 1.00 - cps:red, lightness = 0.75
 
 colormaps = {
-    "cps_seismic": LinearSegmentedColormap(
+    "cps:seismic": LinearSegmentedColormap(
         "cps:seismic",
         segmentdata={
             "red": [

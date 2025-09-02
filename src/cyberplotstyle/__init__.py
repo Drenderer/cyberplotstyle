@@ -6,7 +6,7 @@ import matplotlib as mpl
 import matplotlib.colors as mcolors
 import matplotlib.pyplot as plt
 
-from .colormaps import colormaps
+from .colormaps import colormaps as colormaps
 from .colors import cps_colors as cps_colors
 from .colors import tud_colors as tud_colors
 from .tools import scale_hls as scale_hls
